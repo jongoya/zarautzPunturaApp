@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19D76" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+    <entity name="Caja" representedClassName="Caja" syncable="YES" codeGenerationType="class">
+        <attribute name="cajaId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="efectivo" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="fecha" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="numeroServicios" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="tarjeta" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="totalCaja" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="totalProductos" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Cesta" representedClassName="Cesta" syncable="YES" codeGenerationType="class">
+        <attribute name="cestaId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="clientId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="comercioId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="fecha" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isEfectivo" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Cliente" representedClassName="Cliente" syncable="YES" codeGenerationType="class">
+        <attribute name="alergias" optional="YES" attributeType="String"/>
+        <attribute name="alimentacion" optional="YES" attributeType="String"/>
+        <attribute name="antecedentes" optional="YES" attributeType="String"/>
+        <attribute name="apellidos" optional="YES" attributeType="String"/>
+        <attribute name="cirugias" optional="YES" attributeType="String"/>
+        <attribute name="comercioId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="deposicion" optional="YES" attributeType="String"/>
+        <attribute name="descanso" optional="YES" attributeType="String"/>
+        <attribute name="digestion" optional="YES" attributeType="String"/>
+        <attribute name="direccion" optional="YES" attributeType="String"/>
+        <attribute name="dni" optional="YES" attributeType="String"/>
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="enfermedades" optional="YES" attributeType="String"/>
+        <attribute name="estadoActual" optional="YES" attributeType="String"/>
+        <attribute name="fecha" optional="YES" attributeType="Integer 64" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="firma" optional="YES" attributeType="String"/>
+        <attribute name="idCliente" optional="YES" attributeType="Integer 64" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="imagen" optional="YES" attributeType="String"/>
+        <attribute name="motivoConsulta" optional="YES" attributeType="String"/>
+        <attribute name="nombre" optional="YES" attributeType="String"/>
+        <attribute name="numeroHistoria" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="observaciones" optional="YES" attributeType="String"/>
+        <attribute name="otros" optional="YES" attributeType="String"/>
+        <attribute name="profesion" optional="YES" attributeType="String"/>
+        <attribute name="reglas" optional="YES" attributeType="String"/>
+        <attribute name="telefono" optional="YES" attributeType="String"/>
+        <attribute name="tratamiento" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Empleado" representedClassName="Empleado" syncable="YES" codeGenerationType="class">
+        <attribute name="apellidos" optional="YES" attributeType="String"/>
+        <attribute name="blueColorValue" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="comercioId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="empleadoId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="fecha" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="greenColorValue" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="is_empleado_jefe" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="nombre" optional="YES" attributeType="String"/>
+        <attribute name="redColorValue" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="telefono" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Producto" representedClassName="Producto" syncable="YES" codeGenerationType="class">
+        <attribute name="codigoBarras" optional="YES" attributeType="String"/>
+        <attribute name="comercioId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="imagen" optional="YES" attributeType="String"/>
+        <attribute name="nombre" optional="YES" attributeType="String"/>
+        <attribute name="numProductos" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="precio" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="productoId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Servicio" representedClassName="Servicio" syncable="YES" codeGenerationType="class">
+        <attribute name="comercioId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="empleadoId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="equilibrio" optional="YES" attributeType="String"/>
+        <attribute name="fecha" optional="YES" attributeType="Integer 64" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="idCliente" optional="YES" attributeType="Integer 64" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="idServicio" optional="YES" attributeType="Integer 64" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="imgPlantilla" optional="YES" attributeType="String"/>
+        <attribute name="imgPlantilla2" optional="YES" attributeType="String"/>
+        <attribute name="isEfectivo" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="meridianos" optional="YES" attributeType="String"/>
+        <attribute name="observaciones" optional="YES" attributeType="String"/>
+        <attribute name="selector" optional="YES" attributeType="String"/>
+        <attribute name="servicios" optional="YES" attributeType="Transformable"/>
+        <attribute name="sistemas" optional="YES" attributeType="Transformable"/>
+    </entity>
+    <entity name="Sistema" representedClassName="Sistema" syncable="YES" codeGenerationType="class">
+        <attribute name="nombre" optional="YES" attributeType="String"/>
+        <attribute name="sis1" optional="YES" attributeType="String"/>
+        <attribute name="sis2" optional="YES" attributeType="String"/>
+        <attribute name="sis3" optional="YES" attributeType="String"/>
+        <attribute name="sis4" optional="YES" attributeType="String"/>
+        <attribute name="sis5" optional="YES" attributeType="String"/>
+        <attribute name="sis6" optional="YES" attributeType="String"/>
+        <attribute name="sistemaId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="subtitulo" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="TipoServicios" representedClassName="TipoServicios" syncable="YES" codeGenerationType="class">
+        <attribute name="bloqueaTerapeuta" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="blueColorValue" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="comercioId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="duracion" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="greenColorValue" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="nombre" optional="YES" attributeType="String"/>
+        <attribute name="numCabinas" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="precio" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="redColorValue" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="servicioId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="terapeuta" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Venta" representedClassName="Venta" syncable="YES" codeGenerationType="class">
+        <attribute name="cantidad" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="cestaId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="comercioId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="productoId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="ventaId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <elements>
+        <element name="Caja" positionX="-54" positionY="99" width="128" height="148"/>
+        <element name="Cesta" positionX="-54" positionY="126" width="128" height="118"/>
+        <element name="Cliente" positionX="-63" positionY="-18" width="128" height="448"/>
+        <element name="Empleado" positionX="-54" positionY="81" width="128" height="208"/>
+        <element name="Producto" positionX="-54" positionY="126" width="128" height="148"/>
+        <element name="Servicio" positionX="-45" positionY="63" width="128" height="253"/>
+        <element name="Sistema" positionX="-54" positionY="135" width="128" height="178"/>
+        <element name="TipoServicios" positionX="-45" positionY="90" width="128" height="208"/>
+        <element name="Venta" positionX="-45" positionY="135" width="128" height="118"/>
+    </elements>
+</model>
